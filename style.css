@@ -4,6 +4,22 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+:root{
+  --primary-color: white;
+  --secondary-color: black;
+}
+
+.dark-theme {
+  --primary-color: #121212;
+  --secondary-color: #ffffff;
+}
+
+#icon{
+  width:15px;
+  cursor:pointer;
+}
+
 /*----------------header--------------*/
 .navbar {
   width: 100%;
@@ -11,7 +27,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: #fff;
+  background: var(--primary-color);
   z-index: 10;
   position: fixed;
   top:0;
@@ -24,7 +40,7 @@
   font-size: 14px;
 }
 .nav-left i {
-  color: black;
+  color: var( --secondary-color);
   cursor: pointer;
 }
 .menu {
@@ -95,12 +111,12 @@
   align-items: center;
   justify-content: flex-start;
   padding-left: 12%;
-  color: white;
+  color: var(--primary-color);;
   position: relative;
   margin-top: 70px;
 }
 .hero-content {
-  color: white;
+  color: var(--primary-color);;
   max-width: 600px;
 }
 .hero-content h1 {
@@ -110,12 +126,12 @@
 }
 .hero-content p {
  font-size: 1rem;
- color: white;
+ color: var(--primary-color);;
  margin-bottom: 30px;
 }
 .shop-btn {
   background-color: transparent;
-  color: white;
+  color:  var(--primary-color);;
   padding: 12px 25px;
   border: solid 1px white;
   cursor: pointer;
@@ -146,7 +162,7 @@
 }
 .section-heading h3 {
   font-size: 1rem;
-  color:black;
+  color:var( --secondary-color);
   margin-bottom: 25px;
 }
 
@@ -160,7 +176,7 @@
   margin: 0 auto;
 }
 .image-card {
-  background: #fff;
+  background: var(--primary-color);;
   text-align: center;
 }
 .image-card img {
@@ -170,7 +186,7 @@
 }
 .image-card p {
   padding: 20px 0;
-  color: black;
+  color:var( --secondary-color);
   font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
 }
@@ -192,8 +208,8 @@
 }
 .info-side {
   width: 80%;
-  background-color: black;
-  color: white;
+  background-color:var( --secondary-color);
+  color: var(--primary-color);;
   padding:  30px 60px;
   display: flex;
   flex-direction: column;
@@ -214,7 +230,7 @@
 }
 .show-more {
   background-color: transparent;
-  color: white;
+  color: var(--primary-color);;
   border: 1px solid white;
   padding: 8px;
   cursor: pointer;
@@ -256,7 +272,7 @@
 .info-sideone {
   width: 65%;
   background-color: silver;
-  color: black;
+  color: var( --secondary-color);
   padding:  4rem;
   display: flex;
   flex-direction: column;
@@ -273,7 +289,7 @@
 }
 .show-moreone {
   background-color: transparent;
-  color: black;
+  color:var( --secondary-color);
   border: 1px solid black;
   padding: 10px;
   cursor: pointer;
@@ -315,8 +331,8 @@
 }
 .info-sidetwo {
   width: 70%;
-  background-color: black;
-  color: white;
+  background-color:var( --secondary-color);
+  color:  var(--primary-color);;
   padding:  5rem;
   display: flex;
   flex-direction: column;
@@ -333,7 +349,7 @@
 }
 .show-moretwo {
   background-color: transparent;
-  color: white;
+  color:  var(--primary-color);;
   border: 1px solid white;
   padding: 12px 20px;
   cursor: pointer;
@@ -375,7 +391,7 @@
 }
 
 .footer-col h4 {
-  color: black;
+  color: var( --secondary-color);
   font-size: 16px;
   font-weight: bold;
 }
@@ -392,13 +408,13 @@
 
 .footer-col .links li a {
   text-decoration: none;
-  color: black;
+  color: var( --secondary-color);
 }
 
 
 .footer-col p {
   margin: 25px 0;
-  color: black;
+  color: var( --secondary-color);
   max-width: 300px;
   font-size: 14px;
 }
@@ -410,16 +426,16 @@
 
 .footer-col input {
   height: 40px;
-  background: white;
+  background: var(--primary-color);;
   width: 100%;
   outline: none;
   border: 1px solid white ;
-  color: black;
+  color: var( --secondary-color);
   padding-left: 20px;
 }
 
 .footer-col input::placeholder {
-  color: black;
+  color: var( --secondary-color);
 }
 
 .footer-col .icons {
@@ -429,12 +445,12 @@
 }
 
 .footer-col .icons i {
-  color: black;
+  color: var( --secondary-color);
   cursor: pointer;
 }
 
 .footer-col .icons i:hover  {
-  color: #fff;
+  color: var(--primary-color);;
 }
 
 .footer-bottom {
@@ -447,7 +463,7 @@
   text-decoration: none;
   display: inline;
   justify-content: center;
-  color: black;  
+  color: var( --secondary-color);  
 }
 @media (max-width: 768px) {
   .footer .footer-row {
