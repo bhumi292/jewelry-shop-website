@@ -1,3 +1,73 @@
+.navbar {
+  background: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.menu a {
+  color: var(--secondary-color);
+}
+
+.search-box input {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+}
+
+.search-box i {
+  color: var(--text-muted);
+}
+
+
+.shop-btn {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+
+.section-heading h2 {
+  color: var(--secondary-color);
+}
+
+.section-heading h3 {
+  color: var(--text-muted);
+}
+
+.info-sideone {
+  background-color: var(--bg-soft);
+}
+
+.footer {
+  background: var(--bg-soft);
+}
+
+
+.show-more,
+.show-moretwo {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.show-moreone {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+
+.footer-col input {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+}
+
+.footer-col input::placeholder {
+  color: var(--text-muted);
+}
+
+.footer-col .icons i:hover {
+  color: var(--secondary-color);
+}
+
+--------------------style.css--------------------------------------------
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +78,27 @@
 :root{
   --primary-color: white;
   --secondary-color: black;
-  --bg-soft: white;
-  --border-color: black;
-  --text-muted: #555; /*dark grey*/
+}
+
+.dark-theme {
+  --primary-color: #121212;
+  --secondary-color: #ffffff;
+}
+
+:root{
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --bg-soft: #f2f2f2;
+  --border-color: #000000;
+  --text-muted: #555;
 }
 
 .dark-theme{
-  --primary-color: black;
-  --secondary-color: white;
-  --bg-soft: #1e1e1e; /*Eerie black*/
-  --border-color: white;
-  --text-muted: #bbbbbb; /*light grey*/
+  --primary-color: #121212;
+  --secondary-color: #ffffff;
+  --bg-soft: #1e1e1e;
+  --border-color: #ffffff;
+  --text-muted: #bbbbbb;
 }
 
 #icon{
@@ -37,7 +117,7 @@
   z-index: 10;
   position: fixed;
   top:0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid black;
 }
 .nav-left, .nav-right {
   display: flex;
@@ -46,7 +126,7 @@
   font-size: 14px;
 }
 .nav-left i {
-  color: var(--secondary-color);
+  color: var( --secondary-color);
   cursor: pointer;
 }
 .menu {
@@ -56,7 +136,7 @@
 }
 .menu a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: #333;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -64,7 +144,6 @@
 .logo {
   font-size: 18px;
   Letter-spacing: 7px;
-  color: var(--secondary-color);
 }
 
 .search-box {
@@ -86,7 +165,6 @@
 .nav-right i {
   font-size: 15px;
   cursor: pointer;
-  color: var(--secondary-color);
 }
 
 /* Responsive design */
@@ -141,7 +219,7 @@
   background-color: transparent;
   color:  var(--primary-color);;
   padding: 12px 25px;
-  border: solid 1px var(--primary-color);
+  border: solid 1px white;
   cursor: pointer;
   font-size: 12px;
 }
@@ -165,7 +243,7 @@
 .section-heading h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: var(--secondary-color);
+  color: #222;
   font-family: 'Times New Roman', Times, serif;
 }
 .section-heading h3 {
@@ -239,7 +317,7 @@
 .show-more {
   background-color: transparent;
   color: var(--primary-color);;
-  border: 1px solid var(--primary-color);
+  border: 1px solid white;
   padding: 8px;
   cursor: pointer;
   width: 120px;
@@ -279,7 +357,7 @@
 }
 .info-sideone {
   width: 65%;
-  background-color: var(--bg-soft);
+  background-color: silver;
   color: var( --secondary-color);
   padding:  4rem;
   display: flex;
@@ -298,7 +376,7 @@
 .show-moreone {
   background-color: transparent;
   color:var( --secondary-color);
-  border: 1px solid var(--border-color);
+  border: 1px solid black;
   padding: 10px;
   cursor: pointer;
   width: 140px;
@@ -358,7 +436,7 @@
 .show-moretwo {
   background-color: transparent;
   color:  var(--primary-color);;
-  border: 1px solid var(--primary-color);
+  border: 1px solid white;
   padding: 12px 20px;
   cursor: pointer;
   text-decoration: none;
@@ -387,7 +465,7 @@
 /*-------------------footer-------------------------*/
 .footer {
   width: 100%;
-  background: var(--bg-soft);
+  background: silver;
 }
 
 .footer .footer-row {
@@ -437,13 +515,13 @@
   background: var(--primary-color);;
   width: 100%;
   outline: none;
-  border: 1px solid var(--border-color) ;
-  color: var(--secondary-color);
+  border: 1px solid white ;
+  color: var( --secondary-color);
   padding-left: 20px;
 }
 
 .footer-col input::placeholder {
-  color: var( --text-muted);
+  color: var( --secondary-color);
 }
 
 .footer-col .icons {
@@ -453,12 +531,12 @@
 }
 
 .footer-col .icons i {
-  color: var(--secondary-color);
+  color: var( --secondary-color);
   cursor: pointer;
 }
 
 .footer-col .icons i:hover  {
-  color: var(--secondary-color);;
+  color: var(--primary-color);;
 }
 
 .footer-bottom {
